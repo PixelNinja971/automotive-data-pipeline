@@ -161,22 +161,22 @@ The ETL pipeline loads processed data into this table.
 
 automotive-production-etl/
 
-data/
-manufacturing_defect_dataset.csv
-
-src/
-extract.py
-transform.py
-load.py
-main.py
-
-dags/
-etl_pipeline_dag.py
-
-Dockerfile
-docker-compose.yml
-requirements.txt
-README.md
+     data/
+          manufacturing_defect_dataset.csv
+     
+     src/
+          extract.py
+          transform.py
+          load.py
+          main.py
+     
+     dags/
+          etl_pipeline_dag.py
+     
+     Dockerfile
+          docker-compose.yml
+          requirements.txt
+          README.md
 
 
 
