@@ -104,7 +104,8 @@ Examples:
     removing unnecessary columns
     calculating performance indicators
 
-# Load
+** Load**
+
 Loads the processed data into PostgreSQL.
 Example:
 df.to_sql(
@@ -114,7 +115,7 @@ df.to_sql(
     index=False
 )    
 
-# Airflow Orchestration
+ **Airflow Orchestration**
 
 Apache Airflow is used to orchestrate the ETL pipeline.
 The pipeline is defined as a DAG (Directed Acyclic Graph).
@@ -134,3 +135,58 @@ task management
 
 Web interface:
 http://localhost:8080
+
+**Database**
+
+Database used:
+PostgreSQL
+
+Database name:
+production_db
+
+Table created:
+manufacturing_production
+
+The ETL pipeline loads processed data into this table.
+
+**Project Structure**
+
+automotive-production-etl/
+
+data/
+manufacturing_defect_dataset.csv
+
+src/
+extract.py
+transform.py
+load.py
+main.py
+
+dags/
+etl_pipeline_dag.py
+
+Dockerfile
+docker-compose.yml
+requirements.txt
+README.md
+
+
+
+**How to Run the Project**
+
+Clone the repository:
+git clone https://github.com/yourusername/automotive-production-etl.git
+
+Navigate to the project folder:
+cd automotive-production-etl
+
+Start the infrastructure:
+docker-compose up --build
+
+Access services:
+
+Airflow
+localhost:8080
+
+Metabase
+localhost:3000
