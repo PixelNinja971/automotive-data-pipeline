@@ -125,15 +125,16 @@ df.to_sql(
 
 Apache Airflow is used to orchestrate the ETL pipeline.
 The pipeline is defined as a DAG (Directed Acyclic Graph).
-Pipeline tasks:
-    extract
-        ↓
-    transform
-        ↓
-    load
+
+     Pipeline tasks:
+         extract
+             ↓
+         transform
+             ↓
+           load
 ---
 
-## Airflow allows:
+# Airflow allows:
 
 scheduling
 monitoring
@@ -143,7 +144,7 @@ task management
 Web interface:
 http://localhost:8080
 
-**Database**
+# Database
 
 Database used:
 PostgreSQL
@@ -156,7 +157,7 @@ manufacturing_production
 
 The ETL pipeline loads processed data into this table.
 
-**Project Structure**
+# Project Structure
 
 automotive-production-etl/
 
@@ -179,7 +180,7 @@ README.md
 
 
 
-**How to Run the Project**
+# How to Run the Project
 
 Clone the repository:
 git clone https://github.com/yourusername/automotive-production-etl.git
