@@ -85,6 +85,7 @@ The ETL pipeline is implemented in Python and follows a modular architecture.
 ├ load.py
 └ main.py
 
+---
 
 ## Extract
 
@@ -92,10 +93,12 @@ Reads the raw dataset.
 
 Example:
 
-```python
+``python
 df = pd.read_csv("data/manufacturing_defect_dataset.csv")
 
-# Transform
+---
+
+## Transform
 Cleans and prepares the data.
 
 Examples:
@@ -104,7 +107,8 @@ Examples:
     removing unnecessary columns
     calculating performance indicators
 
-** Load**
+---
+## Load
 
 Loads the processed data into PostgreSQL.
 Example:
@@ -115,7 +119,9 @@ df.to_sql(
     index=False
 )    
 
- **Airflow Orchestration**
+---
+
+ ## Airflow Orchestration
 
 Apache Airflow is used to orchestrate the ETL pipeline.
 The pipeline is defined as a DAG (Directed Acyclic Graph).
@@ -125,8 +131,9 @@ Pipeline tasks:
     transform
         ↓
     load
+---
 
-Airflow allows:
+## Airflow allows:
 
 scheduling
 monitoring
