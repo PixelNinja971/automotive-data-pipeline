@@ -183,7 +183,7 @@ automotive-production-etl/
 # How to Run the Project
 
 Clone the repository:
-git clone https://github.com/yourusername/automotive-production-etl.git
+git clone https://github.com/PixelNinja971/automotive-production-etl.git
 
 Navigate to the project folder:
 cd automotive-production-etl
